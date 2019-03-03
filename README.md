@@ -1,1 +1,1 @@
-Simple CRUD with image upload function
+Simple multilang CRUD with image upload function

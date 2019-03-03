@@ -18,9 +18,16 @@
   </nav>
 
 <div class="container main">
-    <%= yield %>
+    <div class="row">
+      <div class="col-md-12">
+        <% flash.each do |name, message| %>
+          <div class="alert alert-<%= name %>">
+            <%= message %>
+        <% end %>
+      </div>
+    </div>
+  <%= yield %>
 </div>
-
 
 </body>
 </html>

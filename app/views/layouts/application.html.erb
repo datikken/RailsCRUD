@@ -9,9 +9,18 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>
-    <%= link_to 'All articles', posts_path %>
-    <%= link_to 'New article', new_post_path %>
+<body>
+
+  <nav class="navbar navbar-light bg-light">
+    <a class="navbar-brand" href="<%= posts_path %>">Статьи</a>
+    <a class="navbar-brand" href="#">Контакты</a>
+    <%= link_to "Новая статья", new_post_path, class: "btn btn-outline-primary pull-xs-right" %>
+  </nav>
+
+<div class="container main">
     <%= yield %>
-  </body>
+</div>
+
+
+</body>
 </html>

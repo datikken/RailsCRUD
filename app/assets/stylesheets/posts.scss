@@ -1,0 +1,18 @@
+.post {
+    margin-bottom: 1em;
+    padding: 1em 0;
+    border-bottom: 1px solid lightblue;
+    h1, h2 {
+        margin-bottom: 0;
+    }
+    .post-summary {
+        padding: .5em 0;
+    }
+    .post-head {
+        font-size: 15px;
+    }
+    .post-body {
+        padding: .5em 0;
+        padding-top: 1em;
+    }
+}
